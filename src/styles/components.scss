@@ -1,0 +1,105 @@
+.categories {
+  width: 100%;
+  text-align: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: auto;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 5px;
+    li {
+      border: 2px solid black;
+
+      a {
+        display: block;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+}
+
+.categories__hobby {
+  ul {
+    width: 700px;
+    li {
+      width: 150px;
+    }
+  }
+}
+
+.categories__exp {
+  ul {
+    width: 800px;
+    li {
+      width: 150px;
+    }
+  }
+}
+
+.categories__skills {
+  ul {
+    width: 550px;
+    li {
+      width: 150px;
+    }
+  }
+}
+
+.display {
+  border: 2px solid black;
+  margin-top: 0px;
+  height: 100%;
+  padding: 5px;
+}
+
+.display__skills {
+  height: calc(100% - 36px);
+  margin-top: 5px;
+}
+
+.display__exp {
+  height: calc(100% - 36px);
+  margin-top: 5px;
+}
+
+.display__hobby {
+  height: calc(100% - 36px);
+  margin-top: 5px;
+}
+
+.dialog {
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid black;
+  position: fixed;
+}
+
+.dialog__phone {
+  left: 10vw;
+  top: 10vh;
+}
+
+.dialog__mail {
+  left: 20vw;
+  top: 10vh;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: auto;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 5px;
+  height: 100%;
+  li {
+    border: 2px solid black;
+  }
+}
