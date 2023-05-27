@@ -1,6 +1,9 @@
+@use './variables';
+
 .footer {
   width: calc(100vw - 40px);
   height: 7vh;
-  background-color: silver;
+  background-color: variables.$water;
   margin: 20px;
+  color: variables.$light;
 }

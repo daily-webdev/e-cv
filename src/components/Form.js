@@ -1,7 +1,7 @@
 import React, { PureComponent, useEffect, useState } from "react";
 import "../styles/components.scss";
 import ReCAPTCHA from "react-google-recaptcha";
-import captchaSK from "../process.js";
+import { captchaSK } from "../process.js";
 
 function Form() {
   const [data, setData] = useState({

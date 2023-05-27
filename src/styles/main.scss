@@ -1,7 +1,9 @@
+@use './variables';
+
 .main {
   width: calc(100vw - 235px);
   height: calc(80vh - 80px);
-  background-color: silver;
+  background-color: variables.$background;
   margin: 20px;
   padding: 20px;
 }
@@ -9,7 +11,7 @@
 .aside {
   width: 175px;
   height: calc(80vh - 80px);
-  background-color: silver;
+  background-color: variables.$background;
   margin: 20px;
   position: absolute;
   top: calc(13vh + 20px);
@@ -36,11 +38,12 @@
         display: block;
         margin: auto;
         padding: 10px 0;
-        border: 2px solid black;
-        color: black;
+        // border: 2px solid black;
+        color: variables.$water;
+        background-color: variables.$sand;
       }
       a:visited {
-        color: black;
+        color: variables.$water;
       }
     }
     text-transform: uppercase;

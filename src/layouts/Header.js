@@ -37,7 +37,7 @@ function Header() {
     <>
       <section className="header">
         <div className="titles">
-          <a className="link" href="https://daily-webdev.github.io/e-cv">
+          <a className="link" href="/">
             <h1>web curriculum vitae</h1>
             <h2>Marcin Taubler</h2>
           </a>

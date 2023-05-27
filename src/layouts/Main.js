@@ -10,71 +10,71 @@ import Edu from "../pages/Edu";
 import Hobby from "../pages/Hobby";
 import Vol from "../pages/Vol";
 import Quotes from "../pages/Quotes";
+import Form from "../components/Form";
 
 function Main() {
   return (
     <>
-      <BrowserRouter>
-        <section className="main">
-          <Routes>
-            <Route path="/" element={<MainPage />}></Route>
-            <Route path="/skills/*" element={<Skills />}></Route>
-            <Route path="/exp/*" element={<Exp />}></Route>
-            <Route path="/projects" element={<Projects />}></Route>
-            <Route path="/blogs" element={<Blogs />}></Route>
-            <Route path="/edu" element={<Edu />}></Route>
-            <Route path="/hobby/*" element={<Hobby />}></Route>
-            <Route path="/vol" element={<Vol />}></Route>
-            <Route path="/quotes" element={<Quotes />}></Route>
-          </Routes>
-        </section>
-        <section className="aside">
-          <nav className="aside__menu">
-            <ul>
-              <li>
-                <NavLink className="link" to="/skills/it">
-                  umiejętności
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/exp/arvex">
-                  doświadczenie
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/projects">
-                  projekty
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/blogs">
-                  blogi
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/edu">
-                  wykształcenie
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/hobby/sports">
-                  zainteresowania
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/vol">
-                  wolontariat
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="link" to="/quotes">
-                  ulubione cytaty
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
-        </section>
-      </BrowserRouter>
+      <section className="main">
+        <Routes>
+          <Route path="/" element={<MainPage />}></Route>
+          <Route path="/skills/*" element={<Skills />}></Route>
+          <Route path="/exp/*" element={<Exp />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/blogs" element={<Blogs />}></Route>
+          <Route path="/edu" element={<Edu />}></Route>
+          <Route path="/hobby/*" element={<Hobby />}></Route>
+          <Route path="/vol" element={<Vol />}></Route>
+          <Route path="/quotes" element={<Quotes />}></Route>
+          <Route path="/contact" element={<Form />}></Route>
+        </Routes>
+      </section>
+      <section className="aside">
+        <nav className="aside__menu">
+          <ul>
+            <li>
+              <NavLink className="link" to="/skills/it">
+                umiejętności
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/exp/arvex">
+                doświadczenie
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/projects">
+                projekty
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/blogs">
+                blogi
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/edu">
+                wykształcenie
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/hobby/sports">
+                zainteresowania
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/vol">
+                wolontariat
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to="/quotes">
+                ulubione cytaty
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </>
   );
 }

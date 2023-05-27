@@ -7,16 +7,17 @@ import Main from "./Main";
 import Footer from "./Footer";
 
 const App = () => {
-
-
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
-      {/* <Suspense fallback={<div>loading...</div>}>
+      {" "}
+      <BrowserRouter>
+        <Header />
+        <Main />
+        <Footer />
+        {/* <Suspense fallback={<div>loading...</div>}>
         <Lazy />
       </Suspense> */}
+      </BrowserRouter>
     </>
   );
 };

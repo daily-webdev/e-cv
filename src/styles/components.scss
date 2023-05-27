@@ -1,3 +1,5 @@
+@use './variables';
+
 .categories {
   width: 100%;
   text-align: center;
@@ -7,17 +9,22 @@
     list-style: none;
     margin: auto;
     justify-content: space-around;
-    border: 2px solid black;
+    // border: 2px solid black;
     padding: 5px;
     li {
-      border: 2px solid black;
+      
 
       a {
         display: block;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 600;
-        color: black;
+        color:variables.$water;
+        background-color: variables.$sand;
+        // border: 2px solid black;
+      }
+      a:visited {
+        color: variables.$water;
       }
     }
   }
@@ -51,7 +58,7 @@
 }
 
 .display {
-  border: 2px solid black;
+  // border: 2px solid black;
   margin-top: 0px;
   height: 100%;
   padding: 5px;
@@ -75,7 +82,7 @@
 .dialog {
   width: 100px;
   height: 50px;
-  background-color: #fff;
+  background-color: variables.$sand;
   border: 2px solid black;
   position: fixed;
 }
@@ -96,10 +103,10 @@
   list-style: none;
   margin: auto;
   justify-content: space-around;
-  border: 2px solid black;
+  // border: 2px solid black;
   padding: 5px;
   height: 100%;
   li {
-    border: 2px solid black;
+    // border: 2px solid black;
   }
 }

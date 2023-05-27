@@ -1,37 +1,17 @@
 import React, { PureComponent, useState } from "react";
+import { BrowserRouter, Route, NavLink, Routes } from "react-router-dom";
 import "../styles/footer.scss";
-import Form from "../components/Form";
 
 const Footer = () => {
-  // const data = {
-  //   name: "uzytkownik",
-  //   email: "",
-  //   subject: "test",
-  //   message: "test",
-  // }
-  // const sendMail = () => {
-  //   fetch("https://mailjet.vercel.app/sendemail", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(data),
-  //   });
-  // .then((res) => {
-  //   return res.json();})
-  // .then((data) => {
-  //   console.log(data);
-  // });
-
-
-return (
-  <>
-    <div className="footer">
-      <Form />
-      {/* <button onClick={sendMail}>mail</button> */}
-    </div>
-  </>
-);
-}
+  return (
+    <>
+      <div className="footer">
+        <NavLink className="link" to="/contact">
+          kontakt
+        </NavLink>
+      </div>
+    </>
+  );
+};
 
 export default Footer;

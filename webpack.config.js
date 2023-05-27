@@ -64,16 +64,16 @@ module.exports = ({ mode }) => ({
     ],
   },
 
-  // devServer: {
-  //   historyApiFallback: true,
-  //   proxy: {
-  //     "/": {
-  //       target: "https://mailjet.vercel.app",
-  //       secure: false,
-  //       changeOrigin: true,
-  //     },
-  //   },
-  // },
+  devServer: {
+    historyApiFallback: true,
+    // proxy: {
+    //   "/": {
+    //     target: "https://mailjet.vercel.app",
+    //     secure: false,
+    //     changeOrigin: true,
+    //   },
+    // },
+  },
 
   // proxy must be in package.json
 });
