@@ -3,6 +3,10 @@
 .categories {
   width: 100%;
   text-align: center;
+  font-family: "Itim";
+  text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 400;
   ul {
     display: flex;
     flex-direction: row;
@@ -16,9 +20,7 @@
 
       a {
         display: block;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-weight: 600;
+        
         color:variables.$water;
         background-color: variables.$sand;
         // border: 2px solid black;

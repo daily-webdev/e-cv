@@ -1,4 +1,5 @@
-@use './variables';
+@use "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono&display=swap');
 
 * {
   margin: 0;
@@ -7,7 +8,17 @@
 }
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #579BB1;
+  font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+  color: #579bb1;
   background-color: variables.$background;
+  font-size: 15px;
+ 
+}
+
+.link {
+  color: variables.$light;
+  text-decoration: none;
+  &:visited {
+    color: variables.$light;
+  }
 }

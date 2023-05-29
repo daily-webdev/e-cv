@@ -1,9 +1,0 @@
-@use "./variables";
-
-.link {
-  color: variables.$light;
-  text-decoration: none;
-  &:visited {
-    color: variables.$light;
-  }
-}
