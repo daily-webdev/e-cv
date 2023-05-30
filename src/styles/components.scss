@@ -20,13 +20,12 @@
 
       a {
         display: block;
-        
-        color:variables.$water;
+        color:variables.$dark-water;
         background-color: variables.$sand;
         // border: 2px solid black;
       }
       a:visited {
-        color: variables.$water;
+        color: variables.$dark-water;
       }
     }
   }
@@ -82,21 +81,41 @@
 }
 
 .dialog {
-  width: 100px;
-  height: 50px;
+  height: 40px;
   background-color: variables.$sand;
-  border: 2px solid black;
   position: fixed;
+  line-height: 40px;
+  z-index: 1;
+  color: variables.$dark-water;
+  font-weight: 600;
+  div {
+    z-index: 2;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    background-color: black;
+    opacity: 0.2;
+    border: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .dialog__phone {
-  left: 10vw;
-  top: 10vh;
+  width: 130px;
+  left: 25vw;
+  top: 6.5vh;
 }
 
 .dialog__mail {
-  left: 20vw;
-  top: 10vh;
+  width: 250px;
+  left: 25vw;
+  top: 6.5vh;
 }
 
 .list {
@@ -108,7 +127,7 @@
   // border: 2px solid black;
   padding: 5px;
   height: 100%;
-  li {
-    // border: 2px solid black;
-  }
+  // li {
+  //   // border: 2px solid black;
+  // }
 }

@@ -6,6 +6,7 @@
   background-color: variables.$water;
   margin: 20px;
   position: relative;
+ 
 }
 
 .titles {
@@ -36,6 +37,15 @@
   transform: translateY(-50%);
   background-color: variables.$water;
   text-align: center;
-  font-size: 26px;
-  line-height: 50px;
+  font-size: 28px;
+  line-height: 56px;
+  button {
+font-size: 28px;
+color: variables.$light;
+background-color: transparent;
+border: 0;
+  }
+  * {
+    margin: 0px 2px;
+  }
 }

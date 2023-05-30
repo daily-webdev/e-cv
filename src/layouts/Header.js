@@ -59,15 +59,19 @@ function Header() {
       </section>
       {isPhone && (
         <div className="dialog dialog__phone">
-          <p>730 130 531</p>
-          <button onClick={handlePhoneClose}>X</button>
+          <button onClick={handlePhoneClose}></button>
+          <div className="dialog dialog__phone">
+            <p>730 130 531</p>
+          </div>
         </div>
       )}
 
       {isMail && (
         <div className="dialog dialog__mail">
-          <p>taublermarcin@gmail.com</p>
-          <button onClick={handleMailClose}>X</button>
+          <button onClick={handleMailClose}></button>
+          <div className="dialog dialog__mail">
+            <p>taublermarcin@gmail.com</p>
+          </div>
         </div>
       )}
     </>
