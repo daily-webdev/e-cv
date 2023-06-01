@@ -8,7 +8,6 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <>
-      {" "}
       <BrowserRouter>
         <Header />
         <Main />
