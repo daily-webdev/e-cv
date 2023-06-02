@@ -18,6 +18,9 @@ function SkillGreen() {
         <li>obsługa QGIS, MS Office, czytanie i tworzenie map, dobra orientacja w terenie</li>
         <li>rozpoznawanie zagrożeń środowiskowych, orientacja w obszarze konfliktu człowiek-środowisko</li>
       </ul>
+      <div className="image imageSGreen1"><img src="../../public/img/sgreen1.jpg" alt="" /></div>
+        <div className="image imageSGreen2"><img src="../../public/img/sgreen2.jpg" alt="" /></div>
+        <div className="image imageSGreen3"><img src="../../public/img/sgreen3.jpg" alt="" /></div>
     </>
   );
 }

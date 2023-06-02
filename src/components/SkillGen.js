@@ -24,6 +24,9 @@ function SkillGen() {
         <li>pierwsza pomoc - sanitariusz HOPR</li>
         <li>a</li>
       </ul>
+      <div className="image imageGen1"><img src="../../public/img/gen1.jpg" alt="" /></div>
+        <div className="image imageGen2"><img src="../../public/img/gen2.jpg" alt="" /></div>
+        <div className="image imageGen3"><img src="../../public/img/gen3.jpg" alt="" /></div>
     </>
   );
 }

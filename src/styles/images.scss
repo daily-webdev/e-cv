@@ -1,0 +1,112 @@
+@use "./variables";
+
+@keyframes twoImages {
+    0% {
+      opacity: 0;
+    }
+    15% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes threeImages {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    23.3% {
+      opacity: 1;
+    }
+    33.3% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+  .image {
+    position: fixed;
+    top: 50vh;
+    right: 24vw;
+    transform: translate(50%, -50%);
+    img {
+      box-shadow: 15px 15px 15px variables.$shadow;
+    }
+  }
+  
+  .imageIt1 {
+    animation: twoImages 15s 0s normal infinite;
+    opacity: 0;
+    img {
+      height: 45vh;
+    }
+  }
+  
+  .imageIt2 {
+    animation: twoImages 15s 7.5s normal infinite;
+    opacity: 0;
+    img {
+      height: 25vh;
+    }
+  }
+
+  .imageGen1 {
+    animation: threeImages 15s 0s normal infinite;
+    opacity: 0;
+    img {
+      height: 25vh;
+    }
+  }
+
+  .imageGen2 {
+    animation: threeImages 15s 5s normal infinite;
+    opacity: 0;
+    img {
+      height: 25vh;
+    }
+  }
+
+  .imageGen3 {
+    animation: threeImages 15s 10s normal infinite;
+    opacity: 0;
+    img {
+      height: 25vh;
+    }
+  }
+
+  .imageSGreen1 {
+    animation: threeImages 15s 0s normal infinite;
+    opacity: 0;
+    img {
+      height: 25vh;
+    }
+  }
+
+  .imageSGreen2 {
+    animation: threeImages 15s 5s normal infinite;
+    opacity: 0;
+    img {
+      height: 45vh;
+    }
+  }
+
+  .imageSGreen3 {
+    animation: threeImages 15s 10s normal infinite;
+    opacity: 0;
+    img {
+      height: 25vh;
+    }
+  }

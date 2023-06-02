@@ -1,4 +1,5 @@
 @use "./variables";
+@use "./images";
 
 .categories {
   width: 100%;
@@ -130,46 +131,4 @@
   // }
 }
 
-@keyframes imageSkills {
-  0% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  35% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
-.image {
-  position: fixed;
-  top: 50vh;
-  right: 24vw;
-  transform: translate(50%, -50%);
-  img {
-    box-shadow: 15px 15px 15px variables.$shadow;
-  }
-}
-
-.imageIt1 {
-  animation: imageSkills 15s 0s normal infinite;
-  opacity: 0;
-  img {
-    height: 45vh;
-  }
-}
-
-.imageIt2 {
-  animation: imageSkills 15s 7.5s normal infinite;
-  opacity: 0;
-  img {
-    height: 25vh;
-  }
-}
