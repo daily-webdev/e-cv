@@ -9,7 +9,7 @@ function Garden() {
         <li>uzgadnianie realizacji projektu ze zleceniodawcą i klientem</li>
         <li>kompleksowa obsługa klienta od pomysłu do realizacji projektu ogrodu</li>
         <li>planowanie, realizowanie i kontrolowanie sprawnej i efektywnej pracy własnej i zespołu (2-6 osób)</li>
-        <li>planowanie pozyskania i rozdysponowania zasobów, kontrola zapasów - materiałów i narzędzi do pracy własnej i zespołu</li>
+        <li>planowanie pozyskania i rozdysponowania zasobów, kontrola zapasów - materiałów i narzędzi</li>
         <li>koordynowanie przepływu informacji między klientem, zleceniodawcą i zespołem</li>
         <li>zastępowanie właściciela firmy pod jego nieobecność (urlop, choroba)</li>
         <li>obsługa kasy fiskalnej i rozliczanie sprzedaży</li>
@@ -18,6 +18,9 @@ function Garden() {
         <li></li>
         <li></li>
        </ul>
+       <div className="image imageGar1"><img src="../../public/img/gar1.jpg" alt="" /></div>
+        <div className="image imageGar2"><img src="../../public/img/gar2.jpg" alt="" /></div>
+        <div className="image imageGar3"><img src="../../public/img/gar3.jpg" alt="" /></div>
         </>
     );
 }

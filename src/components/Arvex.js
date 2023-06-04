@@ -18,6 +18,9 @@ function Arvex() {
             <li>kierowanie pracami zespołu marketingowo-informatycznego</li>
             <li></li>
         </ul>
+        <div className="image imageArv1"><img src="../../public/img/arv1.jpg" alt="" /></div>
+        <div className="image imageArv2"><img src="../../public/img/arv2.jpg" alt="" /></div>
+        <div className="image imageArv3"><img src="../../public/img/arv3.jpg" alt="" /></div>
         </>
     );
 }
