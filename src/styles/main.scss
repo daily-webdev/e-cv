@@ -3,7 +3,7 @@
 .main {
   width: calc(100vw - 235px);
   height: calc(80vh - 80px);
-  background-color: variables.$background;
+  background-color: variables.$background-trans;
   margin: 20px;
   padding: 10px 20px 20px 20px;
 }
@@ -11,7 +11,7 @@
 .aside {
   width: 175px;
   height: calc(80vh - 80px);
-  background-color: variables.$background;
+  background-color: variables.$background-trans;
   margin: 20px;
   position: absolute;
   top: calc(13vh + 20px);
