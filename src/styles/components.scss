@@ -4,10 +4,10 @@
 .categories {
   width: 100%;
   text-align: center;
-  font-family: "Itim";
+  font-family: "Cabin";
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   
   ul {
     display: flex;
@@ -22,12 +22,12 @@
         height: 30px;
         line-height: 30px;
         display: block;
-        color: variables.$dark-water;
-        background-color: variables.$sand;
+        color: variables.$light;
+        background-color: variables.$dark-sand;
         // border: 2px solid black;
       }
       a:visited {
-        color: variables.$dark-water;
+        color: variables.$light;
       }
     }
   }

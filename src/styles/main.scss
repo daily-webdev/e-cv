@@ -16,13 +16,14 @@
   position: absolute;
   top: calc(13vh + 20px);
   left: calc(100vw - 215px);
-  font-family: "Itim";
+  font-family: "Cabin";
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .aside__menu {
   height: 100%;
-  font-size: 15px;
-  font-weight: 400;
+ 
 
   ul {
     height: 100%;
@@ -40,11 +41,11 @@
         margin: auto;
         padding: 10px 0;
         // border: 2px solid black;
-        color: variables.$dark-water;
-        background-color: variables.$sand;
+        color: variables.$light;
+        background-color: variables.$dark-sand;
       }
       a:visited {
-        color: variables.$dark-water;
+        color: variables.$light;
       }
     }
     text-transform: uppercase;

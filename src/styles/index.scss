@@ -1,5 +1,5 @@
 @use "./variables";
-@import url("https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap');
 
 
 * {
@@ -12,7 +12,7 @@ body {
   font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
   color: variables.$dark-water;
   // background-color: variables.$background;
-  background-image: url("http://localhost:8080/public/img/back1.jpg");
+  background-image: url("http://localhost:8080/public/img/sand1.jpg");
   background-size: cover;
   font-size: 15px;
 }
