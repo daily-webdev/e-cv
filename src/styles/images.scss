@@ -42,167 +42,126 @@
     top: 53vh;
     right: 24vw;
     transform: translate(50%, -50%);
+    opacity: 0;
     img {
       box-shadow: 15px 15px 15px variables.$shadow;
+      height: 45vh;
+      
     }
   }
   
-  .imageIt1 {
+  // .imageIt1 {
+  //   animation: twoImages 15s 0s normal infinite;
+    
+  // }
+  
+  // .imageIt2 {
+  //   animation: twoImages 15s 7.5s normal infinite;
+   
+  // }
+
+  // .imageGen1 {
+  //   animation: threeImages 15s 0s normal infinite;
+   
+  // }
+
+  // .imageGen2 {
+  //   animation: threeImages 15s 5s normal infinite;
+ 
+  // }
+
+  // .imageGen3 {
+  //   animation: threeImages 15s 10s normal infinite;
+   
+  // }
+
+  // .imageSGreen1 {
+  //   animation: twoImages 15s 0s normal infinite;
+ 
+  // }
+
+  // .imageSGreen2 {
+  //   animation: twoImages 15s 7.5s normal infinite;
+  
+  // }
+
+
+  // .imageArv1 {
+  //   animation: threeImages 15s 0s normal infinite;
+   
+  // }
+
+  // .imageArv2 {
+  //   animation: threeImages 15s 5s normal infinite;
+   
+  // }
+
+  // .imageArv3 {
+  //   animation: threeImages 15s 10s normal infinite;
+   
+  // }
+
+  // .imageGar1 {
+  //   animation: threeImages 15s 0s normal infinite;
+  
+  // }
+
+  // .imageGar2 {
+  //   animation: threeImages 15s 5s normal infinite;
+  
+  // }
+
+  // .imageGar3 {
+  //   animation: threeImages 15s 10s normal infinite;
+  
+  // }
+
+  // .imageAlp1 {
+  //   animation: threeImages 15s 0s normal infinite;
+   
+  // }
+
+  // .imageAlp2 {
+  //   animation: threeImages 15s 5s normal infinite;
+   
+  // }
+
+  // .imageAlp3 {
+  //   animation: threeImages 15s 10s normal infinite;
+   
+  // }
+
+  // .imageFor1 {
+  //   animation: threeImages 15s 0s normal infinite;
+   
+  // }
+
+  // .imageFor2 {
+  //   animation: threeImages 15s 5s normal infinite;
+   
+  // }
+
+  // .imageFor3 {
+  //   animation: threeImages 15s 10s normal infinite;
+   
+  // }
+
+  .twoFirst {
     animation: twoImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 45vh;
-    }
   }
-  
-  .imageIt2 {
+
+  .twoSecond {
     animation: twoImages 15s 7.5s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
   }
 
-  .imageGen1 {
+  .threeFirst {
     animation: threeImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
   }
 
-  .imageGen2 {
+  .threeSecond {
     animation: threeImages 15s 5s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
   }
 
-  .imageGen3 {
+  .threeThird {
     animation: threeImages 15s 10s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageSGreen1 {
-    animation: threeImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageSGreen2 {
-    animation: threeImages 15s 5s normal infinite;
-    opacity: 0;
-    img {
-      height: 45vh;
-    }
-  }
-
-  .imageSGreen3 {
-    animation: threeImages 15s 10s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageArv1 {
-    animation: threeImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageArv2 {
-    animation: threeImages 15s 5s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageArv3 {
-    animation: threeImages 15s 10s normal infinite;
-    opacity: 0;
-    img {
-      height: 40vh;
-    }
-  }
-
-  .imageGar1 {
-    animation: threeImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageGar2 {
-    animation: threeImages 15s 5s normal infinite;
-    opacity: 0;
-    img {
-      height: 40vh;
-    }
-  }
-
-  .imageGar3 {
-    animation: threeImages 15s 10s normal infinite;
-    opacity: 0;
-    img {
-      height: 40vh;
-    }
-  }
-
-  .imageAlp1 {
-    animation: threeImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageAlp2 {
-    animation: threeImages 15s 5s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageAlp3 {
-    animation: threeImages 15s 10s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageFor1 {
-    animation: threeImages 15s 0s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
-  }
-
-  .imageFor2 {
-    animation: threeImages 15s 5s normal infinite;
-    opacity: 0;
-    img {
-      height: 40vh;
-    }
-  }
-
-  .imageFor3 {
-    animation: threeImages 15s 10s normal infinite;
-    opacity: 0;
-    img {
-      height: 25vh;
-    }
   }

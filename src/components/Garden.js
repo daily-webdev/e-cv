@@ -18,9 +18,9 @@ function Garden() {
         <li></li>
         <li></li>
        </ul>
-       <div className="image imageGar1"><img src="../../public/img/gar1.jpg" alt="" /></div>
-        <div className="image imageGar2"><img src="../../public/img/gar2.jpg" alt="" /></div>
-        <div className="image imageGar3"><img src="../../public/img/gar3.jpg" alt="" /></div>
+       <div className="image threeFirst"><img src="../../public/img/gar1.jpg" alt="" /></div>
+        <div className="image threeSecond"><img src="../../public/img/gar2.jpg" alt="" /></div>
+        <div className="image threeThird"><img src="../../public/img/gar3.jpg" alt="" /></div>
         </>
     );
 }

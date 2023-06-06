@@ -18,8 +18,8 @@ function SkillIt() {
 <li>a</li>
 <li>a</li>
         </ul>
-        <div className="image imageIt1"><img src="../../public/img/it1.jpg" alt="" /></div>
-        <div className="image imageIt2"><img src="../../public/img/it2.jpg" alt="" /></div>
+        <div className="image twoFirst"><img src="../../public/img/it1.jpg" alt="" /></div>
+        <div className="image twoSecond"><img src="../../public/img/it2.jpg" alt="" /></div>
         
         </>
     );

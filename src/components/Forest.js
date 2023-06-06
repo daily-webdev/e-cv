@@ -18,9 +18,9 @@ function Forest() {
         <li></li>
         <li></li>
         <li></li>
-        <div className="image imageFor1"><img src="../../public/img/for1.jpg" alt="" /></div>
-        <div className="image imageFor2"><img src="../../public/img/for2.jpg" alt="" /></div>
-        <div className="image imageFor3"><img src="../../public/img/for3.jpg" alt="" /></div>
+        <div className="image threeFirst"><img src="../../public/img/for1.jpg" alt="" /></div>
+        <div className="image threeSecond"><img src="../../public/img/for2.jpg" alt="" /></div>
+        <div className="image threeThird"><img src="../../public/img/for3.jpg" alt="" /></div>
       </ul>
         </>
     );
