@@ -110,8 +110,10 @@ function Form() {
           onChange={handleChange}
         />
         <button type="submit">Send</button>
+        
       </form>
-      <ReCAPTCHA sitekey={captchaSK} onChange={handleRecap} />
+      <ReCAPTCHA sitekey={captchaSK} onChange={handleRecap}/>
+      
     </>
   );
 }

@@ -15,7 +15,7 @@ const App = () => {
         {/* <Suspense fallback={<div>loading...</div>}>
         <Lazy />
       </Suspense> */}
-      </BrowserRouter>
+     </BrowserRouter>
     </>
   );
 };

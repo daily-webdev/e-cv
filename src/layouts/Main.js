@@ -15,7 +15,9 @@ import Form from "../components/Form";
 function Main() {
   return (
     <>
+    
       <section className="main">
+        
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/skills/*" element={<Skills />}></Route>
@@ -28,6 +30,7 @@ function Main() {
           <Route path="/quotes" element={<Quotes />}></Route>
           <Route path="/contact" element={<Form />}></Route>
         </Routes>
+        
       </section>
       <section className="aside">
         <nav className="aside__menu">
@@ -72,9 +75,11 @@ function Main() {
                 ulubione cytaty
               </NavLink>
             </li>
+            
           </ul>
         </nav>
       </section>
+      
     </>
   );
 }
