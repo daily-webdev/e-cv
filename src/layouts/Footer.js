@@ -9,15 +9,17 @@ import {
 import "../styles/footer.scss";
 
 const Footer = () => {
+  // WYMUSZENIE ODŚWIEŻANIA STRONY
   // // const history = useNavigate();
   // // const handleClick = () => {
   // //   history.forceRefresh();
   // };
+  // onClick={handleClick} do NavLinka
 
   return (
     <>
       <div className="footer">
-        <NavLink className="link" to="/contact" onClick={handleClick}>
+        <NavLink className="link" to="/contact">
           kontakt
         </NavLink>
       </div>

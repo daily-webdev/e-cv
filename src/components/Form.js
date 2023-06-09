@@ -1,6 +1,6 @@
 import React, { PureComponent, useEffect, useState } from "react";
 import "../styles/components.scss";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { captchaSK } from "../process.js";
 
 function Form() {
