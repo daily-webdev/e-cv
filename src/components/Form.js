@@ -12,9 +12,17 @@ function Form() {
     token: "",
   });
 
-  const [isRecapOk, setRecapOk] = useState(false);
+  // const [isRecapOk, setRecapOk] = useState(false);
 
   // const [tokenValue, setTokenValue] = useState("");
+
+  const onSubmit = async (token) => {
+    await setData({
+      ...data,
+      token: token,
+    });
+    document.getElementById("mail-form").submit();
+  };
 
   const handleChange = (event) => {
     setData({
@@ -23,17 +31,17 @@ function Form() {
     });
   };
 
-  const handleRecap = (token) => {
-    if (token) {
-      setRecapOk(true);
-      setData({
-        ...data,
-        token: token,
-      });
-    } else {
-      setRecapOk(false);
-    }
-  };
+  // const handleRecap = (token) => {
+  //   if (token) {
+  //     setRecapOk(true);
+  //     setData({
+  //       ...data,
+  //       token: token,
+  //     });
+  //   } else {
+  //     setRecapOk(false);
+  //   }
+  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -52,30 +60,30 @@ function Form() {
       alert("niewypełnione");
       return;
     }
-    if (isRecapOk) {
-      fetch("https://mailjet.vercel.app/sendemail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+    // if (isRecapOk) {
+    fetch("https://mailjet.vercel.app/sendemail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => {
+        return res.json();
       })
-        .then((res) => {
-          return res.json();
-        })
-        .then((restext) => {
-          {
-            console.log(restext);
-          }
-        })
-        .catch((err) => {
-          // zrób coś z błędem jeśli nie połączy z serwerem
-        });
+      .then((restext) => {
+        {
+          console.log(restext);
+        }
+      })
+      .catch((err) => {
+        // zrób coś z błędem jeśli nie połączy z serwerem
+      });
 
-      cleanInputs();
-    } else {
-      alert("Zaznacz że nie jesteś robotem");
-    }
+    cleanInputs();
+    // } else {
+    //   alert("Zaznacz że nie jesteś robotem");
+    // }
   };
 
   return (
@@ -109,11 +117,17 @@ function Form() {
           value={data.message}
           onChange={handleChange}
         />
-        <button type="submit">Send</button>
-        
+        {/* <button type="submit">Send</button> */}
+        <button
+          class="g-recaptcha"
+          data-sitekey={captchaSK}
+          onClick={onSubmit}
+          data-action="submit"
+        >
+          Send
+        </button>
       </form>
-      <ReCAPTCHA sitekey={captchaSK} onChange={handleRecap}/>
-      
+      {/* <ReCAPTCHA sitekey={captchaSK} onChange={handleRecap}/> */}
     </>
   );
 }
