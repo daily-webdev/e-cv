@@ -1,6 +1,5 @@
 import React, { PureComponent, useEffect, useState } from "react";
 import "../styles/components.scss";
-// import ReCAPTCHA from "react-google-recaptcha";
 import { captchaSK } from "../process.js";
 
 function Form() {
@@ -9,19 +8,27 @@ function Form() {
     email: "",
     subject: "",
     message: "",
-    token: "",
+    tokenValue: "",
   });
 
-  // const [isRecapOk, setRecapOk] = useState(false);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${captchaSK}`;
+    script.async = true;
+    document.body.appendChild(script);
 
-  // const [tokenValue, setTokenValue] = useState("");
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
-  const onSubmit = async (token) => {
-    await setData({
-      ...data,
-      token: token,
+  const cleanInputs = () => {
+    setData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
     });
-    document.getElementById("mail-form").submit();
   };
 
   const handleChange = (event) => {
@@ -31,36 +38,37 @@ function Form() {
     });
   };
 
-  // const handleRecap = (token) => {
-  //   if (token) {
-  //     setRecapOk(true);
-  //     setData({
-  //       ...data,
-  //       token: token,
-  //     });
-  //   } else {
-  //     setRecapOk(false);
-  //   }
-  // };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const cleanInputs = () => {
+  const setToken = async () => {
+    const token = await grecaptcha.execute(captchaSK, { action: "submit" })
       setData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
+        ...data,
+        tokenValue: token,
       });
-    };
+      console.log(data);
+ 
+
+    console.log(token);
+    
+  };
+
+  const onSubmit = async () => {
+    const token = await grecaptcha.execute(captchaSK, { action: "submit" });
+
+    console.log(data);
 
     // warunek błędu
     if (!data.name || !data.email || !data.subject || !data.message) {
       alert("niewypełnione");
       return;
     }
-    // if (isRecapOk) {
+
+    setData({
+      ...data,
+      tokenValue: token,
+    });
+
+    console.log(data);
+
     fetch("https://mailjet.vercel.app/sendemail", {
       method: "POST",
       headers: {
@@ -81,14 +89,11 @@ function Form() {
       });
 
     cleanInputs();
-    // } else {
-    //   alert("Zaznacz że nie jesteś robotem");
-    // }
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit} id="mail-form">
+      <form id="mail-form">
         <label htmlFor="name">Przedstaw się</label>
         <input
           type="text"
@@ -117,9 +122,9 @@ function Form() {
           value={data.message}
           onChange={handleChange}
         />
-        {/* <button type="submit">Send</button> */}
+
         <button
-          class="g-recaptcha"
+          className="g-recaptcha"
           data-sitekey={captchaSK}
           onClick={onSubmit}
           data-action="submit"
@@ -127,7 +132,7 @@ function Form() {
           Send
         </button>
       </form>
-      {/* <ReCAPTCHA sitekey={captchaSK} onChange={handleRecap}/> */}
+      <button onClick={setToken}>test</button>
     </>
   );
 }

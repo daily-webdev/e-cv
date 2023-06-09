@@ -134,22 +134,7 @@
   // }
 }
 
-// iframe {
-//   position: fixed;
-//   top: 40vh;
-//   left: 20vw;
-//   width: 32vw;
-//   height: 15vh;
-//   background-color: transparent;
-//   padding: 10px;
-//   overflow: hidden;
+iframe {
+display: none
 
-// }
-
-// body div:nth-child(3) div {
-//   width: 0 !important;
-//   height: 0 !important;
-//   iframe {
-//     transform: translateY(-40%) !important;
-//   }
-// }
+}
