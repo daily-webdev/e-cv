@@ -5,9 +5,8 @@ function Blogs() {
     return ( 
 
         <div className="page page__blogs">
-            {/* <iframe src="https://openai.com"></iframe> */}
             <div className="display display__blogs">
-                <ul className="list">
+                {/* <ul className="list">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -16,7 +15,8 @@ function Blogs() {
                     <li></li>
                     <li></li>
                     
-                </ul>
+                </ul> */}
+                <iframe className="frame" src="http://wordpress.dailydev.pl/" frameborder="0"></iframe>
             </div>
             
         </div>

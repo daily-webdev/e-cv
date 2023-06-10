@@ -135,6 +135,14 @@
 }
 
 iframe {
-display: none
+  display: none;
+}
 
+.frame {
+  display: block;
+  width: 80vw;
+  height: 70vh;
+  position: fixed;
+  top: 20vh;
+  left: 5vw;
 }
