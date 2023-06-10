@@ -39,22 +39,27 @@ function Form() {
   };
 
   const setToken = async () => {
-    const token = await grecaptcha.execute(captchaSK, { action: "submit" })
+   await grecaptcha.execute(captchaSK, { action: "submit" }).then((token) => {
       setData({
         ...data,
         tokenValue: token,
       });
-      console.log(data);
- 
-
-    console.log(token);
+      console.log(token);
+    });
     
+    console.log(data);
   };
 
   const onSubmit = async () => {
-    const token = await grecaptcha.execute(captchaSK, { action: "submit" });
-
+    // const token = await grecaptcha.execute(captchaSK, { action: "submit" });
     console.log(data);
+
+    // setData({
+    //   ...data,
+    //   tokenValue: token,
+    // });
+
+    
 
     // warunek błędu
     if (!data.name || !data.email || !data.subject || !data.message) {
@@ -62,12 +67,7 @@ function Form() {
       return;
     }
 
-    setData({
-      ...data,
-      tokenValue: token,
-    });
-
-    console.log(data);
+   
 
     fetch("https://mailjet.vercel.app/sendemail", {
       method: "POST",
@@ -75,6 +75,7 @@ function Form() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
+      // mode: "no-cors"
     })
       .then((res) => {
         return res.json();
@@ -132,7 +133,7 @@ function Form() {
           Send
         </button>
       </form>
-      <button onClick={setToken}>test</button>
+      <button onClick={setToken}>pobierz token</button>
     </>
   );
 }
