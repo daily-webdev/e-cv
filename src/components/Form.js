@@ -45,12 +45,13 @@ function Form() {
         tokenValue: token,
       });
       console.log(token);
+      console.log(data);
     });
     
-    console.log(data);
+    
   };
 
-  const onSubmit = async () => {
+  const onSubmit = () => {
     // const token = await grecaptcha.execute(captchaSK, { action: "submit" });
     console.log(data);
 
