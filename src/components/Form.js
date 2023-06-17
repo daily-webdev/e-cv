@@ -38,20 +38,19 @@ function Form() {
     });
   };
 
-  const setToken = async () => {
-   await grecaptcha.execute(captchaSK, { action: "submit" }).then((token) => {
+  const setToken = async (e) => {
+    e.preventDefault();
+    await grecaptcha.execute(captchaSK, { action: "submit" }).then((token) => {
       setData({
-       ...data,
-       tokenValue: token,
-     });
+        ...data,
+        tokenValue: token,
+      });
       console.log(token);
       console.log(data);
-      
     });
   };
 
-  const onSubmit = async () => {
-
+  const onSubmit = () => {
     console.log(data);
 
     // warunek błędu
@@ -59,7 +58,6 @@ function Form() {
       alert("niewypełnione");
       return;
     }
-
 
     fetch("https://mailjet.vercel.app/sendemail", {
       method: "POST",
@@ -88,58 +86,63 @@ function Form() {
     <>
       <form id="mail-form">
         <ul className="list">
-          <li><label htmlFor="name">Przedstaw się</label>
-        <input
-          type="text"
-          name="name"
-          value={data.name}
-          onChange={handleChange}
-        /></li>
-        <li><label htmlFor="email">Twój email</label>
-        <input
-          type="text"
-          name="email"
-          value={data.email}
-          onChange={handleChange}
-        /></li>
-        <li><label htmlFor="subject">Temat</label>
-        <input
-          type="text"
-          name="subject"
-          value={data.subject}
-          onChange={handleChange}
-        /></li>
-        <li><label htmlFor="message">Wiadomość</label>
-        <input
-          type="text"
-          name="message"
-          value={data.message}
-          onChange={handleChange}
-        /></li>
-        <li><button onClick={setToken}>nie jestem robotem</button></li>
-        <li><button
-          className="g-recaptcha"
-          data-sitekey={captchaSK}
-          onClick={onSubmit}
-          data-action="submit"
-        >
-          wyślij
-        </button></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+          <li>
+            <label htmlFor="name">Przedstaw się</label>
+            <input
+              type="text"
+              name="name"
+              value={data.name}
+              onChange={handleChange}
+            />
+          </li>
+          <li>
+            <label htmlFor="email">Twój email</label>
+            <input
+              type="text"
+              name="email"
+              value={data.email}
+              onChange={handleChange}
+            />
+          </li>
+          <li>
+            <label htmlFor="subject">Temat</label>
+            <input
+              type="text"
+              name="subject"
+              value={data.subject}
+              onChange={handleChange}
+            />
+          </li>
+          <li>
+            <label htmlFor="message">Wiadomość</label>
+            <input
+              type="text"
+              name="message"
+              value={data.message}
+              onChange={handleChange}
+            />
+          </li>
+          <li>
+            <button onClick={setToken}>nie jestem robotem</button>
+          </li>
+          <li>
+            <button
+              className="g-recaptcha"
+              data-sitekey={captchaSK}
+              onClick={onSubmit}
+              data-action="submit"
+            >
+              wyślij
+            </button>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
-        
-        
-        
-        
-
-        
       </form>
-      
     </>
   );
 }
