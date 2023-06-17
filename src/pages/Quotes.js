@@ -10,10 +10,7 @@ function Quotes() {
           <li>
             Nie wszystko co warto się opłaca i nie wszystko co się opłaca warto.
           </li>
-          <li>
-            Nie sama trudność rzeczy sprawia, że nie ważymy się ich wykonać,
-            lecz trudnymi czyni je to, że nie ważymy się ich wykonać.
-          </li>
+          
           <li>
             Zrobienie czegoś nowego jest tym, czego większość ludzi boi się
             najbardziej.
@@ -37,7 +34,12 @@ function Quotes() {
             marble and the sculptor.
           </li>
           <li>It’s hard to light a candle, easy to curse the dark instead. </li>
+          <li>
+            Nie sama trudność rzeczy sprawia, że nie ważymy się ich wykonać,
+            lecz trudnymi czyni je to, że nie ważymy się ich wykonać.
+          </li>
         </ul>
+        <div className="image single"><img src="../../public/img/quote1.jpg" alt="" /></div>
       </div>
     </div>
   );

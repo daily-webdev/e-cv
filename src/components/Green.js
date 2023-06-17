@@ -17,6 +17,9 @@ function Green() {
             <li></li>
             <li></li>
             <li></li>
+            <div className="image threeFirst"><img src="../../public/img/green1.jpg" alt="" /></div>
+        <div className="image threeSecond"><img src="../../public/img/green2.jpg" alt="" /></div>
+        <div className="image threeThird"><img src="../../public/img/green3.jpg" alt="" /></div>
         </ul>
         </>
     );

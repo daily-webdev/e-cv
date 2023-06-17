@@ -17,6 +17,9 @@ function Others() {
             <li>mechanika rowerowa, samochodowa</li>
             <li></li>
             <li></li>
+            <div className="image threeFirst"><img src="../../public/img/other1.jpg" alt="" /></div>
+        <div className="image threeSecond"><img src="../../public/img/other2.jpg" alt="" /></div>
+        <div className="image threeThird"><img src="../../public/img/other3.jpg" alt="" /></div>
         </ul>
         </>
     );

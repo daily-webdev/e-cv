@@ -8,6 +8,7 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <>
+    <div className="background"></div>
       <BrowserRouter>
         <Header />
         <Main />

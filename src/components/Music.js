@@ -6,7 +6,7 @@ function Music() {
         <>
         <ul className="list">
             <li>metal symfoniczny, klasyczny, powermetal</li>
-            <li>rock klasyczny, progresywny, alternatywny</li>
+            <li>rock progresywny, alternatywny, hard rock</li>
             <li>indie pop, synth pop</li>
             <li>folk, folk rock</li>
             <li>rap amerykański</li>
@@ -17,6 +17,9 @@ function Music() {
             <li></li>
             <li></li>
             <li></li>
+            <div className="image threeFirst"><img src="../../public/img/music1.jpg" alt="" /></div>
+        <div className="image threeSecond"><img src="../../public/img/music2.jpg" alt="" /></div>
+        <div className="image threeThird"><img src="../../public/img/music3.jpg" alt="" /></div>
         </ul>
         </>
     );

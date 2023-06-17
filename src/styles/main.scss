@@ -2,23 +2,24 @@
 
 .main {
   width: calc(100vw - 235px);
-  height: calc(80vh - 80px);
+  height: calc(75vh - 40px);
   background-color: variables.$background-trans;
-  margin: 20px;
+  margin: 20px 20px 20px 20px;
   padding: 10px 20px 20px 20px;
 }
 
 .aside {
   width: 175px;
-  height: calc(80vh - 80px);
+  height: calc(75vh - 40px);
   background-color: variables.$background-trans;
-  margin: 20px;
+  margin: 20px 20px;
   position: absolute;
-  top: calc(13vh + 20px);
+  top: 15vh;
   left: calc(100vw - 215px);
   font-family: "Cabin";
   font-size: 15px;
   font-weight: 600;
+  padding: 5px 0px;
 }
 
 .aside__menu {
@@ -39,7 +40,7 @@
         text-align: center;
         display: block;
         margin: auto;
-        padding: 10px 0;
+        padding: 15px 0;
         // border: 2px solid black;
         color: variables.$light;
         background-color: variables.$dark-sand;

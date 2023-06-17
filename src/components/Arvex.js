@@ -5,7 +5,7 @@ function Arvex() {
     return (  
         <>
         <ul className="list">
-            <li>Arvex Grobelny - asystent ds. marketingu i IT 2021 – obecnie</li>
+            <span className="chapter"><li>Arvex Grobelny - asystent ds. marketingu i IT | 2021 – obecnie</li></span>
             <li>obsługa Active Directory, Proxmox, Comarch ERP, Office, Corel</li>
             <li>opieka nad infrastrukturą komputerową i sieciową firmy</li>
             <li>testowanie oprogramowania, rozwiązywanie problemów użytkowników</li>

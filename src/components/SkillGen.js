@@ -5,10 +5,7 @@ function SkillGen() {
   return (
     <>
       <ul className="list">
-        <li>
-          sprawna komunikacja z dostawcami usług, klientami i innymi podmiotami
-          współpracującymi
-        </li>
+        <li>sprawna komunikacja z dostawcami usług, klientami i innymi podmiotami współpracującymi</li>
         <li>organizacja i planowanie działań własnych i zespołu</li>
         <li>znajdowanie rozwiązań przy małej dostępności zasobów</li>
         <li>samodzielność w uczeniu się i szukaniu rozwiązań</li>
@@ -22,7 +19,7 @@ function SkillGen() {
         <li>język angielski B2</li>
         <li>prawo jazdy kat. B, prowadzenie samochodów dostawczych</li>
         <li>pierwsza pomoc - sanitariusz HOPR</li>
-        <li>a</li>
+        <li></li>
       </ul>
       <div className="image threeFirst"><img src="../../public/img/gen1.jpg" alt="" /></div>
         <div className="image threeSecond"><img src="../../public/img/gen2.jpg" alt="" /></div>

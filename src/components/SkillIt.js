@@ -13,10 +13,10 @@ function SkillIt() {
 <li>rozwiązywanie problemów informatycznych, sieciowych, sprzętowych</li>
 <li>manualne testowanie oprogramowania, przygotowywanie stanowisk pracy</li>
 <li>przygotowywanie materiałów marketingowych, reklamowych, copywriting, znajdowanie błędów w dokumentacji</li>
-<li>a</li>
-<li>a</li>
-<li>a</li>
-<li>a</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
         </ul>
         <div className="image twoFirst"><img src="../../public/img/it1.jpg" alt="" /></div>
         <div className="image twoSecond"><img src="../../public/img/it2.jpg" alt="" /></div>

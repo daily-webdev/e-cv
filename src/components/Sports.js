@@ -18,6 +18,9 @@ function Sports() {
           <li></li>
           <li></li>
           <li></li>
+          <div className="image threeFirst"><img src="../../public/img/sport1.jpg" alt="" /></div>
+        <div className="image threeSecond"><img src="../../public/img/sport2.jpg" alt="" /></div>
+        <div className="image threeThird"><img src="../../public/img/sport3.jpg" alt="" /></div>
         </ul>
       
      

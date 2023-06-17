@@ -5,7 +5,7 @@ function Garden() {
     return (  
         <>
        <ul className="list">
-        <li>Ogrody Słomniki - wykonawca projektów ogrodów 2013 – 2021</li>
+        <span className="chapter"><li>Ogrody Słomniki - wykonawca projektów ogrodów | 2013 – 2021</li></span>
         <li>uzgadnianie realizacji projektu ze zleceniodawcą i klientem</li>
         <li>kompleksowa obsługa klienta od pomysłu do realizacji projektu ogrodu</li>
         <li>planowanie, realizowanie i kontrolowanie sprawnej i efektywnej pracy własnej i zespołu (2-6 osób)</li>

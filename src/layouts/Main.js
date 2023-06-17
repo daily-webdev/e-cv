@@ -4,13 +4,12 @@ import "../styles/main.scss";
 import MainPage from "../pages/MainPage";
 import Skills from "../pages/Skills";
 import Exp from "../pages/Exp";
-import Projects from "../pages/Projects";
 import Blogs from "../pages/Blogs";
 import Edu from "../pages/Edu";
 import Hobby from "../pages/Hobby";
 import Vol from "../pages/Vol";
 import Quotes from "../pages/Quotes";
-import Form from "../components/Form";
+import Contact from "../pages/Contact";
 
 function Main() {
   return (
@@ -22,13 +21,13 @@ function Main() {
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/skills/*" element={<Skills />}></Route>
           <Route path="/exp/*" element={<Exp />}></Route>
-          <Route path="/projects" element={<Projects />}></Route>
+          
           <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="/edu" element={<Edu />}></Route>
           <Route path="/hobby/*" element={<Hobby />}></Route>
           <Route path="/vol" element={<Vol />}></Route>
           <Route path="/quotes" element={<Quotes />}></Route>
-          <Route path="/contact" element={<Form />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         
       </section>
@@ -43,11 +42,6 @@ function Main() {
             <li>
               <NavLink className="link" to="/exp/arvex">
                 doświadczenie
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="link" to="/projects">
-                projekty
               </NavLink>
             </li>
             <li>

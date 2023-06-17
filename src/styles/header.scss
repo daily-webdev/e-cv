@@ -1,11 +1,11 @@
 @use "./variables";
 
 .header {
-  width: calc(100vw - 40px);
-  height: 13vh;
-  // background-image: url("http://localhost:8080/public/img/water1.jpg");
+  // width: calc(100vw - 40px);
+  width: 100vw;
+  height: 15vh;
   background-color: variables.$water-trans;
-  margin: 20px;
+  // margin: 0px 0px 0px 0px;
   position: relative;
 }
 
@@ -22,21 +22,23 @@
   h2 {
     font-size: 26px;
   }
-  font-family: "Cabin";
+  font-family: "Cabin", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
 }
 
 .social {
-  width: 400px;
+  // width: 200px;
   height: 50px;
   position: absolute;
   top: 50%;
-  left: 3%;
+  left: 0;
+  margin-left: 100px;
   transform: translateY(-50%);
   background-color: transparent;
   text-align: center;
   font-size: 28px;
   line-height: 56px;
+  // border: 2px solid black;
   button {
     font-size: 28px;
     color: variables.$light;
