@@ -148,13 +148,79 @@ iframe {
 }
 
 .chapter {
-color: variables.$dark-sand;
-font-weight: 600;
-margin-left: 20px;
-font-size: 16px;
+  color: variables.$dark-sand;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 16px;
 }
 
 #mail-form {
   width: 100%;
   height: 100%;
+
+  label {
+    width: 200px;
+    display: inline-block;
+    // border: 2px solid black;
+  }
+
+  li:nth-of-type(4) {
+    position: relative;
+    label {
+      height: 200px;
+    }
+  }
+
+  input {
+    width: 300px;
+    font-family: "Roboto Mono";
+    border: 2px solid variables.$dark-sand;
+  }
+
+  li:nth-of-type(3) {
+    input {
+      width: 600px;
+    }
+  }
+
+  textarea {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 600px;
+    max-width: 900px;
+    font-family: "Roboto Mono";
+    display: inline-block;
+    position: absolute;
+    border: 2px solid variables.$dark-sand;
+  }
+
+  button {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    color: variables.$light;
+    background-color: variables.$dark-sand;
+    border: none;
+    width: 170px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Cabin", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  li:nth-of-type(5) {
+    p {
+      display: inline-block;
+      padding-left: 30px;
+    }
+  }
+
+  li:nth-of-type(6) {
+    height: 30px;
+    p {
+      display: inline-block;
+      padding-left: 30px;
+    }
+  }
 }

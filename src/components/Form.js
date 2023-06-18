@@ -11,6 +11,10 @@ function Form() {
     tokenValue: "",
   });
 
+  const [isSend, setSend] = useState(false);
+  const [isLoading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState("");
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = `https://www.google.com/recaptcha/api.js?render=${captchaSK}`;
@@ -40,6 +44,7 @@ function Form() {
 
   const setToken = async (e) => {
     e.preventDefault();
+    setLoading(true);
     await grecaptcha.execute(captchaSK, { action: "submit" }).then((token) => {
       setData({
         ...data,
@@ -48,9 +53,12 @@ function Form() {
       console.log(token);
       console.log(data);
     });
+    setSend(true);
+    setLoading(false);
   };
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
+    e.preventDefault();
     console.log(data);
 
     // warunek błędu
@@ -73,10 +81,11 @@ function Form() {
       .then((restext) => {
         {
           console.log(restext);
+          setFeedback(restext);
         }
       })
       .catch((err) => {
-        // zrób coś z błędem jeśli nie połączy z serwerem
+        setFeedback(`błąd backendu ${err}, proszę wysłać maila bezpośrednio`)
       });
 
     cleanInputs();
@@ -115,7 +124,7 @@ function Form() {
           </li>
           <li>
             <label htmlFor="message">Wiadomość</label>
-            <input
+            <textarea
               type="text"
               name="message"
               value={data.message}
@@ -123,24 +132,18 @@ function Form() {
             />
           </li>
           <li>
-            <button onClick={setToken}>nie jestem robotem</button>
+            <button onClick={setToken}>nie jestem robotem</button>{isLoading && (<p>weryfikowanie...</p>)}
           </li>
           <li>
-            <button
+            {isSend && (<button
               className="g-recaptcha"
               data-sitekey={captchaSK}
               onClick={onSubmit}
               data-action="submit"
             >
               wyślij
-            </button>
+            </button>)}<p>{feedback}</p>
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
         </ul>
       </form>
     </>
