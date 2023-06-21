@@ -1,0 +1,104 @@
+.cloud1 {
+  width: 25vw;
+  position: absolute;
+  animation: cloud1 6s 0s normal infinite;
+}
+
+.cloud2 {
+  width: 25vw;
+  position: absolute;
+  animation: cloud2 6s 0s normal infinite;
+}
+
+.cloud3 {
+  width: 25vw;
+  position: absolute;
+  animation: cloud3 6s 0s normal infinite;
+}
+
+@keyframes cloud1 {
+  0% {
+    opacity: 0;
+    left: -25vw;
+    top: 40vh;
+  }
+  40% {
+    opacity: 1;
+    left: 30vw;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 1.2;
+    left: 30vw;
+    top: 40vh;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: 5vw;
+    top: 20vh;
+    scale: 1.2;
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    opacity: 0;
+    left: -25vw;
+    top: 40vh;
+  }
+  40% {
+    opacity: 1;
+    left: 30vw;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 1.2;
+    left: 30vw;
+    top: 40vh;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: 60vw;
+    top: 30vh;
+    scale: 1.2;
+  }
+}
+
+@keyframes cloud3 {
+  0% {
+    opacity: 0;
+    left: -25vw;
+    top: 40vh;
+  }
+  40% {
+    opacity: 1;
+    left: 30vw;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 1.2;
+    left: 30vw;
+    top: 40vh;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    left: 35vw;
+    top: 60vh;
+    scale: 1.2;
+  }
+}
