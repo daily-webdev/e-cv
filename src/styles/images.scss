@@ -36,6 +36,27 @@
     }
   }
 
+  @keyframes threeImagesMove {
+    0% {
+      opacity: 0;
+      left: 45vw;
+    }
+    10% {
+      opacity: 1;
+      left: 45vw;
+    }
+    23.3% {
+      opacity: 1;
+      left: 20vw;
+    }
+    33.3% {
+      opacity: 0;
+      left: 20vw;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
   .image {
     position: fixed;
@@ -74,4 +95,25 @@
 
   .single {
     opacity: 1;
+  }
+
+  .threeFirstDelay {
+    animation: threeImagesMove 15s 4s normal 1, threeImages 15s 19s normal infinite;
+    left: 20vw;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .threeSecondDelay {
+    animation: threeImages 15s 9s normal infinite;
+    left: 20vw;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .threeThirdDelay {
+    animation: threeImages 15s 14s normal infinite;
+    left: 20vw;
+    right: auto;
+    transform: translate(-50%, -50%);
   }
