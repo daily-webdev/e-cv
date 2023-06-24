@@ -1,119 +1,124 @@
 @use "./variables";
 
 @keyframes twoImages {
-    0% {
-      opacity: 0;
-    }
-    15% {
-      opacity: 1;
-    }
-    35% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  @keyframes threeImages {
-    0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 1;
-    }
-    23.3% {
-      opacity: 1;
-    }
-    33.3% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  @keyframes threeImagesMove {
-    0% {
-      opacity: 0;
-      left: 45vw;
-    }
-    10% {
-      opacity: 1;
-      left: 45vw;
-    }
-    23.3% {
-      opacity: 1;
-      left: 20vw;
-    }
-    33.3% {
-      opacity: 0;
-      left: 20vw;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-  .image {
-    position: fixed;
-    top: 53vh;
-    right: 24vw;
-    transform: translate(50%, -50%);
+  0% {
     opacity: 0;
-    img {
-      box-shadow: 15px 15px 15px variables.$shadow;
-      height: 45vh;
-      opacity: 0.8;
-      
-    }
   }
-
-
-  .twoFirst {
-    animation: twoImages 15s 0s normal infinite;
-  }
-
-  .twoSecond {
-    animation: twoImages 15s 7.5s normal infinite;
-  }
-
-  .threeFirst {
-    animation: threeImages 15s 0s normal infinite;
-  }
-
-  .threeSecond {
-    animation: threeImages 15s 5s normal infinite;
-  }
-
-  .threeThird {
-    animation: threeImages 15s 10s normal infinite;
-  }
-
-  .single {
+  15% {
     opacity: 1;
   }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-  .threeFirstDelay {
-    animation: threeImagesMove 15s 4s normal 1, threeImages 15s 19s normal infinite;
+@keyframes threeImages {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  23.3% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes threeImagesMove {
+  0% {
+    opacity: 0;
+    left: 45vw;
+  }
+  10% {
+    opacity: 1;
+    left: 45vw;
+  }
+  23.3% {
+    opacity: 1;
     left: 20vw;
-    right: auto;
-    transform: translate(-50%, -50%);
   }
 
-  .threeSecondDelay {
-    animation: threeImages 15s 9s normal infinite;
+  63% {
+    opacity: 1;
     left: 20vw;
-    right: auto;
-    transform: translate(-50%, -50%);
   }
 
-  .threeThirdDelay {
-    animation: threeImages 15s 14s normal infinite;
+  73% {
+    opacity: 0;
     left: 20vw;
-    right: auto;
-    transform: translate(-50%, -50%);
   }
+  100% {
+    opacity: 0;
+  }
+}
+
+.image {
+  position: fixed;
+  top: 53vh;
+  right: 24vw;
+  transform: translate(50%, -50%);
+  opacity: 0;
+  img {
+    box-shadow: 15px 15px 15px variables.$shadow;
+    height: 45vh;
+    opacity: 0.8;
+  }
+}
+
+.twoFirst {
+  animation: twoImages 15s 0s normal infinite;
+}
+
+.twoSecond {
+  animation: twoImages 15s 7.5s normal infinite;
+}
+
+.threeFirst {
+  animation: threeImages 15s 0s normal infinite;
+}
+
+.threeSecond {
+  animation: threeImages 15s 5s normal infinite;
+}
+
+.threeThird {
+  animation: threeImages 15s 10s normal infinite;
+}
+
+.single {
+  opacity: 1;
+}
+
+.threeFirstMove {
+  animation: threeImagesMove 15s 0s normal 1,
+    threeImages 15s 21s normal infinite;
+  left: 20vw;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.threeSecondMove {
+  animation: threeImages 15s 11s normal infinite;
+  left: 20vw;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
+
+.threeThirdMove {
+  animation: threeImages 15s 16s normal infinite;
+  left: 20vw;
+  right: auto;
+  transform: translate(-50%, -50%);
+}
