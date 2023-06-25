@@ -132,7 +132,7 @@ ul {
 }
 }
 
-@keyframes aboutText {
+@keyframes aboutText1 {
     0% {
     
       opacity: 0;
@@ -150,7 +150,7 @@ ul {
 
   }
 
-  @keyframes aboutText1 {
+  @keyframes aboutText2 {
     0% {
     
       opacity: 0;
@@ -167,7 +167,7 @@ ul {
     }
   }
 
-  @keyframes aboutText2 {
+  @keyframes aboutText3 {
     0% {
     
       opacity: 0;
@@ -184,7 +184,7 @@ ul {
     }
   }
 
-  @keyframes aboutText3 {
+  @keyframes aboutText4 {
     0% {
     
       opacity: 0;
@@ -201,7 +201,7 @@ ul {
     }
   }
 
-  @keyframes aboutText4 {
+  @keyframes aboutText5 {
     0% {
     
       opacity: 0;
@@ -218,7 +218,7 @@ ul {
     }
   }
 
-  @keyframes aboutText5 {
+  @keyframes aboutText6 {
     0% {
     
       opacity: 0;
@@ -236,31 +236,82 @@ ul {
   }
 
   .about1 {
-    animation: aboutText 3s 0s ease-in 1;
+    animation: aboutText1 3s 0s ease-in 1;
     opacity: 1;
   }
 
   .about2 {
-    animation: aboutText1 4s 0s ease-in 1;
+    animation: aboutText2 4s 0s ease-in 1;
     opacity: 1;
   }
 
   .about3 {
-    animation: aboutText2 5s 0s ease-in 1;
+    animation: aboutText3 5s 0s ease-in 1;
     opacity: 1;
   }
 
   .about4 {
-    animation: aboutText3 6s 0s ease-in 1;
+    animation: aboutText4 6s 0s ease-in 1;
     opacity: 1;
   }
 
   .about5 {
-    animation: aboutText4 7s 0s ease-in 1;
+    animation: aboutText5 7s 0s ease-in 1;
     opacity: 1;
   }
 
   .about6 {
-    animation: aboutText5 8s 0s ease-in 1;
+    animation: aboutText6 8s 0s ease-in 1;
     opacity: 1;
   }
+
+
+  @keyframes iconMove {
+    0% {
+      opacity: 0;
+     
+    }
+  
+    10% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      left: var(--x);
+      top: calc(50vh - var(--y));
+
+    }
+  }
+
+  .bigIcon {
+    color: variables.$dark-sand;
+    font-size: 200px;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    
+  }
+
+
+.move1 {
+  animation: iconMove 3s 3s ease-out 1;
+}
+
+.move2 {
+  animation: iconMove 3s 4s ease-out 1;
+}
+.move3 {
+  animation: iconMove 3s 5s ease-out 1;
+}
+.move4 {
+  animation: iconMove 3s 6s ease-out 1;
+}
+.move5 {
+  animation: iconMove 3s 7s ease-out 1;
+}
+.move6 {
+  animation: iconMove 3s 8s ease-out 1;
+}
