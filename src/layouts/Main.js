@@ -46,7 +46,7 @@ function Main() {
             </li>
             <li>
               <NavLink className="link" to="/blogs">
-                blogi
+                projekty
               </NavLink>
             </li>
             <li>

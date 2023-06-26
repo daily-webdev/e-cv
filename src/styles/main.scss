@@ -4,22 +4,25 @@
   width: calc(100vw - 235px);
   height: calc(75vh - 40px);
   background-color: variables.$background-trans;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 0px 20px 20px;
   padding: 10px 20px 20px 20px;
+  // border: 2px solid black;
+  border-radius: 10px;
 }
 
 .aside {
   width: 175px;
   height: calc(75vh - 40px);
-  background-color: variables.$background-trans;
-  margin: 20px 20px;
+  background-color: transparent;
+  margin: 20px 20px 20px 20px;
   position: absolute;
   top: 15vh;
   left: calc(100vw - 215px);
   font-family: "Cabin";
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 5px 0px;
+  // padding: 5px 0px;
+  // border: 2px solid black;
 }
 
 .aside__menu {
@@ -30,12 +33,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     li {
       text-align: center;
       a {
-        width: 150px;
+        width: 170px;
         text-decoration: none;
         text-align: center;
         display: block;
@@ -43,10 +46,18 @@
         padding: 15px 0;
         // border: 2px solid black;
         color: variables.$light;
-        background-color: variables.$dark-sand;
+        background-color: variables.$water-trans;
+        transition-duration: 0.2s;
+        border-radius: 10px;
       }
       a:visited {
         color: variables.$light;
+      }
+
+      a:hover {
+        color: variables.$brown;
+        
+
       }
     }
     text-transform: uppercase;

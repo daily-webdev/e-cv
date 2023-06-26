@@ -1,5 +1,14 @@
 @use "./variables";
 
+@keyframes oneImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes twoImages {
   0% {
     opacity: 0;
@@ -74,6 +83,7 @@
     box-shadow: 15px 15px 15px variables.$shadow;
     height: 45vh;
     opacity: 0.8;
+    border-radius: 10px;
   }
 }
 
@@ -98,7 +108,8 @@
 }
 
 .single {
-  opacity: 1;
+ opacity: 1;
+  animation: oneImage 2s 0s normal 1;
 }
 
 .threeFirstMove {

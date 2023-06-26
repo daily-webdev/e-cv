@@ -21,9 +21,31 @@
   }
   h2 {
     font-size: 26px;
+    margin-left: 14vw;
   }
   font-family: "Cabin", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
+  color: variables.$light;
+  transition-duration: 0.1s;
+  &:hover {
+    scale: 1.03;
+  }
+  a {
+    transition-duration: 0.1s;
+  }
+  a:hover {
+    color: variables.$brown;
+    
+    h1 {
+      font-size: 37px;
+      transition-duration: 0.1s;
+    }
+
+    h2 {
+      font-size: 27px;
+      transition-duration: 0.1s;
+    }
+  }
 }
 
 .social {
@@ -39,12 +61,21 @@
   font-size: 28px;
   line-height: 56px;
   // border: 2px solid black;
+  a {
+    transition-duration: 0.2s;
+  }
+  a:hover, button:hover {
+    color: variables.$brown;
+
+  }
   button {
     font-size: 28px;
     color: variables.$light;
     background-color: transparent;
     border: 0;
+    transition-duration: 0.2s;
   }
+  
   * {
     margin: 0px 2px;
   }

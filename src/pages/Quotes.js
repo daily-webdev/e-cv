@@ -26,14 +26,13 @@ function Quotes() {
           </li>
 
           <li>
-            A mistake that keeps being repeated is not a mistake, it’s a choice.
+            Błąd, który jest powtarzany, nie jest już błędem lecz wyborem.
           </li>
-          <li>The aim of argument should not be victory, but progress.</li>
+          <li>Celem dyskusji powinien być postęp, a nie zwycięstwo.</li>
           <li>
-            Man cannot remake himself without suffering, for he is both the
-            marble and the sculptor.
+            Człowiek nie może zmienić siebie bez cierpienia, bo jest marmurem i rzeźbiarzem jednocześnie.
           </li>
-          <li>It’s hard to light a candle, easy to curse the dark instead. </li>
+          <li>Łatwiej jest przekląć ciemność niż zapalić świecę. </li>
           <li>
             Nie sama trudność rzeczy sprawia, że nie ważymy się ich wykonać,
             lecz trudnymi czyni je to, że nie ważymy się ich wykonać.

@@ -25,9 +25,14 @@
         color: variables.$light;
         background-color: variables.$dark-sand;
         // border: 2px solid black;
+        transition-duration: 0.2s;
+        border-radius: 5px;
       }
       a:visited {
         color: variables.$light;
+      }
+      a:hover {
+        color: variables.$water-light;
       }
     }
   }
@@ -175,6 +180,7 @@ iframe {
     width: 300px;
     font-family: "Roboto Mono";
     border: 2px solid variables.$dark-sand;
+    border-radius: 5px;
   }
 
   li:nth-of-type(3) {
@@ -192,6 +198,7 @@ iframe {
     display: inline-block;
     position: absolute;
     border: 2px solid variables.$dark-sand;
+    border-radius: 5px;
   }
 
   button {
@@ -207,6 +214,7 @@ iframe {
     font-family: "Cabin", Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 600;
     cursor: pointer;
+    border-radius: 5px;
   }
 
   li:nth-of-type(5) {

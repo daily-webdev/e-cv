@@ -15,4 +15,10 @@
   font-weight: 600;
   padding-left: 100px;
   line-height: 10vh;
+  a {
+    transition-duration: 0.2s;
+  }
+  a:hover {
+    color: variables.$brown;
+  }
 }

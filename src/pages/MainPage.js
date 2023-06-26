@@ -51,37 +51,37 @@ function MainPage() {
             className="bigIcon move1"
             style={{ "--x": randomsX[0] + "vw", "--y": randomsY[0] + "vh" }}
           >
-            <FaHouseUser />
+            <MdNaturePeople />
           </div>
           <div
             className="bigIcon move2"
             style={{ "--x": randomsX[1] + "vw", "--y": randomsY[1] + "vh" }}
           >
-            <FaBirthdayCake />
+            <MdOutlineSportsGymnastics />
           </div>
           <div
             className="bigIcon move3"
             style={{ "--x": randomsX[2] + "vw", "--y": randomsY[2] + "vh" }}
           >
-            <MdNaturePeople />
+            <MdComputer />
           </div>
           <div
             className="bigIcon move4"
             style={{ "--x": randomsX[3] + "vw", "--y": randomsY[3] + "vh" }}
           >
-            <MdOutlineSportsGymnastics />
+             <FaMusic />
           </div>
           <div
             className="bigIcon move5"
             style={{ "--x": randomsX[4] + "vw", "--y": randomsY[4] + "vh" }}
           >
-            <MdComputer />
+            <FaBirthdayCake />
           </div>
           <div
             className="bigIcon move6"
             style={{ "--x": randomsX[5] + "vw", "--y": randomsY[5] + "vh" }}
           >
-            <FaMusic />
+           <FaHouseUser />
           </div>
         </div>
       </section>

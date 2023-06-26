@@ -6,15 +6,16 @@ function Others() {
         <>
         <ul className="list">
             <li>aktywności outdoorowe</li>
-            <li>green city, smart city</li>
+           
             <li>fotografia przyrodnicza</li>
             <li>shinrin-yoku</li>
-            <li>prowadzenie blogów</li>
-            <li>język nagielski</li>
+            <li>język angielski</li>
             <li>postęp naukowo-techniczny</li>
-            <li>nauka programowania</li>
+            <li>green city, smart city</li>
+            <li>programowanie</li>
             <li>antropologia</li>
             <li>mechanika rowerowa, samochodowa</li>
+            <li></li>
             <li></li>
             <li></li>
             <div className="image threeFirst"><img src="../../public/img/other1.jpg" alt="" /></div>
