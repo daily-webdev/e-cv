@@ -1,5 +1,5 @@
 import React, { PureComponent, useState } from "react";
-import { BrowserRouter, Route, NavLink, Routes } from "react-router-dom";
+import { BrowserRouter, Route, NavLink, Routes, useLocation } from "react-router-dom";
 import "../styles/main.scss";
 import MainPage from "../pages/MainPage";
 import Skills from "../pages/Skills";
@@ -12,6 +12,10 @@ import Quotes from "../pages/Quotes";
 import Contact from "../pages/Contact";
 
 function Main() {
+
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <>
     
@@ -21,7 +25,6 @@ function Main() {
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/skills/*" element={<Skills />}></Route>
           <Route path="/exp/*" element={<Exp />}></Route>
-          
           <Route path="/blogs" element={<Blogs />}></Route>
           <Route path="/edu" element={<Edu />}></Route>
           <Route path="/hobby/*" element={<Hobby />}></Route>
@@ -35,37 +38,37 @@ function Main() {
         <nav className="aside__menu">
           <ul>
             <li>
-              <NavLink className="link" to="/skills/it">
+              <NavLink className="link" to="/skills/it" style={currentPath.startsWith("/skills") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 umiejętności
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/exp/arvex">
+              <NavLink className="link" to="/exp/arvex" style={currentPath.startsWith("/exp") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 doświadczenie
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/blogs">
+              <NavLink className="link" to="/blogs" style={currentPath.startsWith("/blogs") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 projekty
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/edu">
+              <NavLink className="link" to="/edu" style={currentPath.startsWith("/edu") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 wykształcenie
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/hobby/sports">
+              <NavLink className="link" to="/hobby/sports" style={currentPath.startsWith("/hobby") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 zainteresowania
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/vol">
+              <NavLink className="link" to="/vol" style={currentPath.startsWith("/vol") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 wolontariat
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/quotes">
+              <NavLink className="link" to="/quotes" style={currentPath.startsWith("/quotes") ? {"box-shadow": "0px 0px 10px 5px rgba(111, 79, 28, 0.737)"} : {}}>
                 ulubione cytaty
               </NavLink>
             </li>

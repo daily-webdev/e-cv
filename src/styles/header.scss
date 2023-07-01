@@ -18,33 +18,24 @@
     text-transform: uppercase;
     font-size: 36px;
     line-height: 1;
+    transition-duration: 0.3s;
   }
   h2 {
     font-size: 26px;
     margin-left: 14vw;
+    transition-duration: 0.3s;
   }
   font-family: "Cabin", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   color: variables.$light;
-  transition-duration: 0.1s;
-  &:hover {
-    scale: 1.03;
-  }
-  a {
-    transition-duration: 0.1s;
-  }
+
   a:hover {
     color: variables.$brown;
-    
-    h1 {
-      font-size: 37px;
-      transition-duration: 0.1s;
+    h2 {
+      
+      margin-left: 3vw;
     }
 
-    h2 {
-      font-size: 27px;
-      transition-duration: 0.1s;
-    }
   }
 }
 

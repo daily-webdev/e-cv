@@ -1,6 +1,7 @@
 import React, { PureComponent, useEffect, useState } from "react";
 import "../styles/components.scss";
 import { captchaSK } from "../process.js";
+import { FaEnvelope } from "react-icons/fa";
 
 function Form() {
   const [data, setData] = useState({
@@ -45,6 +46,7 @@ function Form() {
   const setToken = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setFeedback("");
     await grecaptcha.execute(captchaSK, { action: "submit" }).then((token) => {
       setData({
         ...data,
@@ -132,7 +134,7 @@ function Form() {
             />
           </li>
           <li>
-            <button onClick={setToken}>nie jestem robotem</button>{isLoading && (<p>weryfikowanie...</p>)}
+            <button onClick={setToken}>nie jestem robotem</button>{isLoading && (<p className="formMessage">weryfikowanie...</p>)}
           </li>
           <li>
             {isSend && (<button
@@ -142,9 +144,10 @@ function Form() {
               data-action="submit"
             >
               wyślij
-            </button>)}<p>{feedback}</p>
+            </button>)}<p className="formMessage">{feedback}</p>
           </li>
         </ul>
+        {feedback === "wysłano!" && (<div className="envelope"><FaEnvelope /></div>)}
       </form>
     </>
   );

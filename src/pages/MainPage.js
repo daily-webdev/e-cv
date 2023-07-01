@@ -41,7 +41,7 @@ function MainPage() {
             <ul className="list">
               <li className="about1">przyrodnik</li>
               <li className="about2">sportowiec</li>
-              <li className="about3">informatyk</li>
+              <li className="about3">programista</li>
               <li className="about4">muzykant</li>
               <li className="about5">7 września 1996</li>
               <li className="about6">Kraków</li>

@@ -216,6 +216,9 @@ iframe {
     cursor: pointer;
     border-radius: 5px;
   }
+  button:hover {
+    color: variables.$water-light;
+  }
 
   li:nth-of-type(5) {
     p {
@@ -231,4 +234,53 @@ iframe {
       padding-left: 30px;
     }
   }
+
+@keyframes showing {
+  0% {
+    opacity: 0;
+   
+  }
+
+  100% {
+    opacity: 1;
+   
+  }
+}
+
+@keyframes sending {
+  0% {
+    opacity: 0;
+    top: 73vh;
+  }
+
+  50% {
+    opacity: 1;
+    top: 53vh;
+  }
+
+  100% {
+    opacity: 0;
+    top: 33vh;
+  }
+}
+
+
+  .formMessage {
+animation: showing 0.3s 0s normal 1;
+  }
+}
+
+
+
+.envelope {
+  animation: sending 2s 0s linear 1;
+  position: fixed;
+  top: 53vh;
+  right: 30vw;
+  transform: translate(50%, -50%);
+  color: variables.$light;
+font-size: 100px;
+opacity: 0;
+
+
 }
