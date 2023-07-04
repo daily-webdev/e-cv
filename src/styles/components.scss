@@ -87,6 +87,18 @@
   margin-top: 5px;
 }
 
+
+@keyframes showingDialog {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+  
+}
+
 .dialog {
   height: 40px;
   background-color: variables.$sand;
@@ -95,33 +107,36 @@
   z-index: 1;
   color: variables.$dark-water;
   font-weight: 600;
+  border-radius: 5px;
   div {
     z-index: 2;
+    border-radius: 5px;
   }
   p {
     text-align: center;
   }
   button {
-    background-color: black;
-    opacity: 0.2;
+    background-color: variables.$dark-brown;
+    opacity: 0.3;
     border: 0;
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
+animation: showingDialog 1s 0s normal 1;
   }
 }
 
 .dialog__phone {
   width: 130px;
-  left: 25vw;
+  left: 20vw;
   top: 6.5vh;
 }
 
 .dialog__mail {
   width: 250px;
-  left: 25vw;
+  left: 20vw;
   top: 6.5vh;
 }
 
@@ -153,7 +168,7 @@ iframe {
 }
 
 .chapter {
-  color: variables.$dark-sand;
+  color: variables.$semi-brown;
   font-weight: 600;
   margin-left: 20px;
   font-size: 16px;

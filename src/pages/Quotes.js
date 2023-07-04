@@ -30,7 +30,7 @@ function Quotes() {
           </li>
           <li>Celem dyskusji powinien być postęp, a nie zwycięstwo.</li>
           <li>
-            Człowiek nie może zmienić siebie bez cierpienia, bo jest marmurem i rzeźbiarzem jednocześnie.
+            Człowiek nie może zmienić siebie bez cierpienia, bo jest kamieniem i rzeźbiarzem jednocześnie.
           </li>
           <li>Łatwiej jest przekląć ciemność niż zapalić świecę. </li>
           <li>
