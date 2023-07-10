@@ -22,16 +22,4 @@ body {
   }
 }
 
-.background {
-  width: 100vw;
-  height: 100vh;
-  // background-image: url("http://localhost:8080/public/img/sand1.jpg");
-  // background-image: url("https://e-cv-mauve.vercel.app/public/img/sand1.jpg");
-  background-image: url("https://dailydev.pl/public/img/sand1.jpg");
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.3;
-}
+

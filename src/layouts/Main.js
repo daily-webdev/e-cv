@@ -1,4 +1,4 @@
-import React, { PureComponent, useState } from "react";
+import React, { PureComponent, useState, Suspense } from "react";
 import { BrowserRouter, Route, NavLink, Routes, useLocation } from "react-router-dom";
 import "../styles/main.scss";
 import MainPage from "../pages/MainPage";
@@ -15,14 +15,36 @@ function Main() {
 
   const location = useLocation();
   const currentPath = location.pathname;
+  let backgroundStyle;
+
+switch (true) {
+  case currentPath.startsWith("/skills") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand7.jpg')"};
+  break;
+  case currentPath.startsWith("/exp") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand9.jpg')"};
+  break;
+  case currentPath.startsWith("/blogs") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand3.jpg')"};
+  break;
+  case currentPath.startsWith("/edu") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand5.jpg')"};
+  break;
+  case currentPath.startsWith("/hobby") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand12.jpg')"};
+  break;
+  case currentPath.startsWith("/vol") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand11.jpg')"};
+  break;
+  case currentPath.startsWith("/quotes") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand8.jpg')"};
+  break;
+  case currentPath.startsWith("/skills") : backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand10.jpg')"};
+  break;
+  default: backgroundStyle = {"background-image": "url('http://localhost:8080/public/img/sand4.jpg')"};
+  break
+}
 
   return (
     <>
-    
+    <div className="background" style={backgroundStyle}></div>
       <section className="main">
         
         <Routes>
-          <Route path="/" element={<MainPage />}></Route>
+          <Route path="/" element={<Suspense fallback={null}><MainPage /></Suspense>}></Route>
           <Route path="/skills/*" element={<Skills />}></Route>
           <Route path="/exp/*" element={<Exp />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>

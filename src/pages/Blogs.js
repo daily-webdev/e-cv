@@ -15,11 +15,11 @@ function Blogs() {
                     <li></li>
                     
                 </ul> */}
-        <iframe
+        {/* <iframe
           className="frame"
           src="https://wordpress.dailydev.pl"
           frameborder="0"
-        ></iframe>
+        ></iframe> */}
       </div>
     </div>
   );
