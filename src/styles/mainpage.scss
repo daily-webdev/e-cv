@@ -108,6 +108,7 @@
 //   }
 // }
 
+@media (min-width: 1500px) {
 .about {
   position: fixed;
   left: 30vw;
@@ -131,6 +132,8 @@ ul {
   }
 }
 }
+
+
 
 @keyframes aboutText1 {
     0% {
@@ -314,4 +317,19 @@ ul {
 }
 .move6 {
   animation: iconMove 3s 8s ease-out 1;
+}
+}
+
+@media (min-width: 1900px) {
+  .about {
+    ul {
+      li {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .bigIcon {
+    font-size: 300px;
+  }
 }

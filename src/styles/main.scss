@@ -1,28 +1,29 @@
 @use './variables';
 
+@media (min-width: 1500px) {
 .main {
-  width: calc(100vw - 235px);
+  width: calc(88vw - 60px);
   height: calc(75vh - 40px);
   // background-color: variables.$background-trans;
   margin: 20px 0px 20px 20px;
   padding: 10px 20px 20px 20px;
-  // border: 2px solid black;
+  border: 2px solid black;
   border-radius: 10px;
 }
 
 .aside {
-  width: 175px;
-  height: calc(75vh - 40px);
+  width: 12vw;
+  height: 75vh;
   background-color: transparent;
-  margin: 20px 20px 20px 20px;
+  margin: 0px 20px;
   position: absolute;
   top: 15vh;
-  left: calc(100vw - 215px);
+  left: calc(88vw - 40px);
   font-family: "Cabin";
   font-size: 16px;
   font-weight: 600;
   // padding: 5px 0px;
-  // border: 2px solid black;
+  border: 2px solid black;
 }
 
 .aside__menu {
@@ -33,7 +34,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     li {
       text-align: center;
@@ -77,4 +78,23 @@
   z-index: -1;
   opacity: 0.2;
   transition-duration: 0.2s;
+}
+
+}
+
+@media (min-width: 1900px) {
+  .aside {
+    font-size: 22px;
+  }
+
+  .aside__menu {
+    ul {
+      li {
+        a {
+          width: 220px;
+          padding: 20px 0px;
+        }
+      }
+    }
+  }
 }

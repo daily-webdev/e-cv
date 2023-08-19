@@ -1,5 +1,7 @@
 @use "./variables";
 
+
+@media (min-width: 1500px) {
 .footer {
   // width: calc(100vw - 40px);
   width: 100vw;
@@ -13,7 +15,7 @@
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
-  padding-left: 100px;
+  padding-left: 5vw;
   line-height: 10vh;
   a {
     transition-duration: 0.2s;
@@ -21,4 +23,11 @@
   a:hover {
     color: variables.$brown;
   }
+}
+}
+
+@media (min-width: 1900px) {
+.footer {
+  font-size: 36px;
+}
 }
