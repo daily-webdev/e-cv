@@ -20,7 +20,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <NavLink className="link" to="/contact">
-          kontakt
+          formularz kontaktowy
         </NavLink>
       </div>
     </>

@@ -7,7 +7,7 @@
   // background-color: variables.$background-trans;
   margin: 20px 0px 20px 20px;
   padding: 10px 20px 20px 20px;
-  border: 2px solid black;
+  // border: 2px solid black;
   border-radius: 10px;
 }
 
@@ -23,7 +23,7 @@
   font-size: 16px;
   font-weight: 600;
   // padding: 5px 0px;
-  border: 2px solid black;
+  // border: 2px solid black;
 }
 
 .aside__menu {
@@ -84,14 +84,16 @@
 
 @media (min-width: 1900px) {
   .aside {
-    font-size: 22px;
+    font-size: 28px;
+    margin: 25px 10px;
   }
 
   .aside__menu {
+    height: 95%;
     ul {
       li {
         a {
-          width: 220px;
+          width: 300px;
           padding: 20px 0px;
         }
       }
