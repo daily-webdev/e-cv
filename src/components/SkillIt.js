@@ -25,8 +25,7 @@ function SkillIt() {
           manualne testowanie oprogramowania, przygotowywanie stanowisk pracy
         </li>
         <li>
-          przygotowywanie materiałów marketingowych, reklamowych, copywriting,
-          znajdowanie błędów w dokumentacji
+          przygotowywanie materiałów marketingowych, reklamowych, copywriting<br/>znajdowanie błędów w dokumentacji
         </li>
         <li></li>
         <li></li>

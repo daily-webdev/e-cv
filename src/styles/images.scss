@@ -1,5 +1,7 @@
 @use "./variables";
 
+@media (min-width: 1200px) {
+
 @keyframes oneImage {
   0% {
     opacity: 0;
@@ -133,3 +135,17 @@
   right: auto;
   transform: translate(-50%, -50%);
 }
+}
+
+@media (max-width: 1300px) and (min-height: 900px)
+ {
+  .image {
+    top: 43vh;
+    right: 26vw;
+    img {
+     
+      height: 30vh;
+    
+    }
+  }
+ }

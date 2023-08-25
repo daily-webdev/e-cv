@@ -15,11 +15,10 @@ function Edu() {
             zurbanizowanych
           </li>
           <li>
-            praca inżynierska: Struktura lasu o charakterze pierwotnym w
-            rezerwacie Janj w Bośni i Hercegowinie
+            praca inżynierska:<br/>Struktura lasu o charakterze pierwotnym w rezerwacie Janj (Bośnia i Hercegowina)
           </li>
           <li>
-            praca magisterska: Rozmieszczenie i charakterystyka kolonii lęgowych
+            praca magisterska:<br/>Rozmieszczenie i charakterystyka kolonii lęgowych
             gawrona w Krakowie
           </li>
           <li>

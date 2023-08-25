@@ -1,6 +1,6 @@
 @use './variables';
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 .main {
   width: calc(88vw - 60px);
   height: calc(75vh - 40px);
@@ -15,7 +15,7 @@
   width: 12vw;
   height: 75vh;
   background-color: transparent;
-  margin: 0px 20px;
+  margin: 20px 20px;
   position: absolute;
   top: 15vh;
   left: calc(88vw - 40px);
@@ -27,7 +27,7 @@
 }
 
 .aside__menu {
-  height: 100%;
+  height: calc(100% - 40px);
  
 
   ul {
@@ -82,21 +82,35 @@
 
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 1300px) and (min-height: 900px)
+
+{
+
   .aside {
-    font-size: 28px;
-    margin: 25px 10px;
+
+     left: calc(88vw - 60px);
+  }
+  
+}
+
+@media (min-width: 1700px) {
+  .aside {
+    font-size: 20px;
+    margin: 20px 5px;
+    
+    
   }
 
   .aside__menu {
-    height: 95%;
+    height: calc(100% - 40px);
     ul {
       li {
         a {
-          width: 300px;
-          padding: 20px 0px;
+          width: 220px;
+          padding: 15px 0px;
         }
       }
     }
   }
 }
+

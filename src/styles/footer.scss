@@ -1,7 +1,7 @@
 @use "./variables";
 
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 .footer {
   // width: calc(100vw - 40px);
   width: 100vw;
@@ -26,8 +26,8 @@
 }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1700px) {
 .footer {
-  font-size: 40px;
+  font-size: 24px;
 }
 }

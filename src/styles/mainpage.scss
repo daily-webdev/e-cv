@@ -108,7 +108,7 @@
 //   }
 // }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 .about {
   position: fixed;
   left: 30vw;
@@ -118,11 +118,12 @@ height: 45vh;
 ul {
   li{
     height: 30px;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 4px;
+    text-shadow: 4px 4px 5px variables.$dark-sand;
 
     span {
       font-size: 18px;
@@ -320,16 +321,16 @@ ul {
 }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1700px) {
   .about {
     ul {
       li {
-        font-size: 38px;
+        font-size: 30px;
       }
     }
   }
 
   .bigIcon {
-    font-size: 400px;
+    font-size: 320px;
   }
 }

@@ -1,6 +1,6 @@
 @use "./variables";
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
 
 .header {
   // width: calc(100vw - 40px);
@@ -76,24 +76,25 @@
 
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1700px) {
 
   .titles {
     h1 {
-      font-size: 70px;
+      font-size: 55px;
     }
     h2 {
-      font-size: 40px;
+      font-size: 35px;
       
     }
   }
   .social {
-    font-size: 56px;
+    font-size: 40px;
+    height: 40px;
     button {
-      font-size: 56px;
+      font-size: 40px;
     }
     * {
-      margin: 0px 6px;
+      margin: 0px 4px;
     }
   
   }
