@@ -46,7 +46,10 @@ function Header() {
           <a className="link" href="https://www.facebook.com/marcin.taubler/">
             <FaFacebook />
           </a>
-          <a className="link" href="">
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/marcin-taubler/"
+          >
             <FaLinkedin />
           </a>
           <button onClick={handleMailOpen}>
