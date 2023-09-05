@@ -6,16 +6,12 @@ function SkillIt() {
     <>
       <ul className="list">
         <li>
-          tworzenie aplikacji frontend + podstawowy backend w React + NodeJS,
-          Express
-        </li>
-        <li>
           znajomość React, NodeJS, JS, Express, MongoDB, GIT, BEM, CSS, SASS,
           HTML
         </li>
         <li>obsługa VSC, Mongo Atlas/Compass, Github, Vercel</li>
         <li>
-          obsługa MS Office, Corel, Proxmox, Active Directory, Comarch ERP
+          obsługa MS Office, Corel, Proxmox, Active Directory, Comarch ERP, Avast Business
         </li>
         <li>biegła obsługa komputera + Windows</li>
         <li>

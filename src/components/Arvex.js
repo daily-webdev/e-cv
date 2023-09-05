@@ -15,7 +15,7 @@ function Arvex() {
             <li>sporządzanie i sprawdzanie dokumentacji, tworzenie zestawień cenowych, kalkulacji, raportów</li>
             <li>doradztwo telefoniczne w zakresie użytkowania produktów firmy, dostarczanie dokumentacji</li>
             <li>współpraca z grafikiem, agencją reklamową, dostawcami sprzętu, oprogramowania i innych usług</li>
-            <li>kierowanie pracami zespołu marketingowo-informatycznego</li>
+            <li>kierowanie pracą zespołu marketingowo-informatycznego pod nieobecność przełożonego</li>
             <li></li>
         </ul>
         <div className="image threeFirst"><img src="../../public/img/arv1.jpg" alt="" /></div>
